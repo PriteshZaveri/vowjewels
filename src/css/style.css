@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+body {
+  padding: 0; }
+
 #nav {
   background: #f2f2f2;
   width: 100%;
@@ -17,18 +20,55 @@
   #nav ul {
     width: 100%; }
     #nav ul li {
+      position: relative;
       list-style-type: none;
       display: inline-block;
-      padding: 0px 15px;
+      padding: 0px 10px;
       font-size: 18px;
       margin: 5px 5px;
       transition: 0.2s; }
+      #nav ul li ul {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        background: #f2f2f2;
+        width: 150px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 10; }
+        #nav ul li ul li {
+          width: 122px;
+          display: block;
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: 0.2s; }
+          #nav ul li ul li:hover {
+            background: #6a66a3; }
+            #nav ul li ul li:hover a {
+              color: #ffffff;
+              font-weight: 600;
+              border: none; }
       #nav ul li a {
         text-decoration: none;
-        color: #191919; }
-      #nav ul li:hover {
-        border-bottom: 3px solid #aa8cc5; }
+        color: #191919;
+        padding: 0px 5px; }
+        #nav ul li a:hover {
+          border-bottom: 3px solid #aa8cc5; }
     #nav ul li.active {
       border-bottom: 3px solid #330f53; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.main-container {
+  max-width: 1366px;
+  margin: auto; }
+
+.Home_Carousel {
+  width: 1366px;
+  margin: 10px auto; }
 
 /*# sourceMappingURL=style.css.map */
