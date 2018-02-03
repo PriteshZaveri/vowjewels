@@ -11,11 +11,11 @@ class HomeSlider extends Component {
       <div className="Home_Carousel">
         <OwlCarousel
         	className="owl-theme"
-        	loop margin={10} nav items={1}
+        	loop autoplay={true} margin={10} nav items={1} dots={false} navText={['<i class="fas fa-angle-left fa-3x"></i>', '<i class="fas fa-angle-right fa-3x"></i>']}
         >
-        	<div class="item"><img src={banner1} /></div>
-            <div class="item"><img src={banner2} /></div>
-            <div class="item"><img src={banner3} /></div>
+        	<div className="item"><img src={banner1} /></div>
+            <div className="item"><img src={banner2} /></div>
+            <div className="item"><img src={banner3} /></div>
         </OwlCarousel>
       </div>
     );

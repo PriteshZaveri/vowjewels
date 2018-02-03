@@ -5,9 +5,13 @@
   margin: 0
 body
   padding: 0
+  width: 100%
+  background: #f2f2f2
 
 #nav
-  background: #f2f2f2
+  display: block
+  position: relative
+  background: #5B5097
   width: 100%
   height: 100px
   text-align: center
@@ -17,7 +21,7 @@ body
     font-size: 40px
     font-family: 'Lobster', cursive
     weight: 400
-    color: #551A8B
+    color: #ffffff
 
   ul
     width: 100%
@@ -44,6 +48,9 @@ body
           padding-top: 10px
           padding-bottom: 10px
           transition: .2s
+          a
+            font-weight: 500
+            color: #222222
           &:hover
             background: #6a66a3
             a
@@ -52,10 +59,11 @@ body
               border: none
       a
         text-decoration: none
-        color: #191919
+        color: #ffffff
+        font-weight: 500
         padding: 0px 5px
         &:hover
-          border-bottom: 3px solid #aa8cc5
+          color: #f2f2f2
     li.active
       border-bottom: 3px solid #330f53
 
@@ -68,5 +76,25 @@ body
   max-width: 1366px
   margin: auto
 .Home_Carousel
-  width: 1366px
-  margin: 10px auto
+  max-width: 1366px
+  margin: 20px auto
+  box-shadow: 2px 2px 10px #d3d3d3
+  img
+    width: 100%
+    height: auto
+
+.owl-prev
+  position: absolute
+  top: 50%
+  left: 0px
+  margin-top: -13px !important
+  background: none !important
+  color: #551A8B !important
+
+.owl-next
+  position: absolute
+  top: 50%
+  right: 5px
+  margin-top: -13px !important
+  color: #551A8B !important
+  background: none !important

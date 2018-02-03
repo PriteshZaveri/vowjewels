@@ -6,7 +6,7 @@ import './css/style.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="main-wrapper">
         <Header />
         <div className="main-container">
           <HomeSlider />
