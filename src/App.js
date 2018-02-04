@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
+import SmallCard from './components/SmallCard'
 import HomeSlider from './components/HomeSlider'
 import './css/style.css';
 
@@ -10,6 +11,7 @@ class App extends Component {
         <Header />
         <div className="main-container">
           <HomeSlider />
+          <SmallCard />
         </div>
       </div>
     );

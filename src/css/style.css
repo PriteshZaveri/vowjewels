@@ -73,7 +73,8 @@ body {
 
 .main-container {
   max-width: 1366px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 20px; }
 
 .Home_Carousel {
   max-width: 1366px;
@@ -98,5 +99,29 @@ body {
   margin-top: -13px !important;
   color: #551A8B !important;
   background: none !important; }
+
+.smallcard {
+  display: inline-block;
+  min-width: 350px;
+  min-height: 500px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 1px 1px 10px #888888; }
+  .smallcard .thumbnail {
+    width: 250px;
+    margin: 20px auto; }
+    .smallcard .thumbnail img {
+      width: 250px;
+      border-radius: 5px; }
+  .smallcard .sc_code {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    background: #f2f2f2; }
+  .smallcard .sc_category {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0px 20px; }
 
 /*# sourceMappingURL=style.css.map */
